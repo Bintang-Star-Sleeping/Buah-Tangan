@@ -11,9 +11,7 @@
         :root {
             --bg-color: #e0e5ec;
             --text-main: #4a5568;
-            --accent: #ed8936; /* Orange hangat untuk F&B */
-            --shadow-light: #ffffff;
-            --shadow-dark: #a3b1c6;
+            --accent: #ed8936; 
         }
 
         body { 
@@ -37,9 +35,7 @@
                         inset -6px -6px 10px 0 rgba(255, 255, 255, 0.8);
         }
 
-        .neo-button {
-            transition: all 0.2s ease-in-out;
-        }
+        .neo-button { transition: all 0.2s ease-in-out; }
         .neo-button:hover {
             transform: translateY(-2px);
             box-shadow: 12px 12px 20px rgba(163, 177, 198, 0.7), 
@@ -51,7 +47,6 @@
                         inset -6px -6px 10px 0 rgba(255, 255, 255, 0.8);
         }
 
-        /* Animasi Transisi Halus */
         @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
         .animate-fade { opacity: 0; animation: fadeInUp 0.8s ease-out forwards; }
         .delay-100 { animation-delay: 0.1s; }
@@ -66,7 +61,7 @@
             <a href="#beranda" class="text-xl font-bold tracking-wider text-[#ed8936]">Buah Tangan.</a>
             <div class="hidden md:flex space-x-8 text-xs font-semibold uppercase tracking-wider">
                 <a href="#beranda" class="hover:text-[#ed8936] transition-colors">Beranda</a>
-                <a href="#katalog" class="hover:text-[#ed8936] transition-colors">Katalog</a>
+                <a href="etalase.html" class="nav-link hover:text-[#ed8936] transition-colors">Katalog</a>
                 <a href="#tentang" class="hover:text-[#ed8936] transition-colors">Kisah</a>
             </div>
             <a href="https://wa.me/6289513363368" target="_blank" class="hidden md:inline-block text-xs font-bold neo-outset neo-button px-6 py-2.5 rounded-full text-[#ed8936]">
@@ -91,7 +86,7 @@
             </p>
             
             <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <a href="#katalog" class="neo-outset neo-button px-10 py-4 rounded-full text-sm font-semibold tracking-wider text-[#ed8936] flex items-center gap-2">
+                <a href="etalase.html" class="nav-link neo-outset neo-button px-10 py-4 rounded-full text-sm font-semibold tracking-wider text-[#ed8936] flex items-center gap-2">
                     Jelajahi Etalase
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
                 </a>
@@ -99,7 +94,7 @@
         </div>
 
         <div class="mt-20 w-full max-w-4xl neo-outset p-4 rounded-[2.5rem] animate-fade delay-200">
-            <img src="https://images.unsplash.com/photo-1547886598-106518cb8e07?q=80&w=1200&auto=format&fit=crop" alt="Buah Tangan Hampers" class="rounded-[2rem] w-full h-[300px] md:h-[450px] object-cover">
+            <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=1200&q=80" alt="Buah Tangan Hampers" class="rounded-[2rem] w-full h-[300px] md:h-[450px] object-cover">
         </div>
     </header>
 
@@ -114,13 +109,13 @@
                 
                 <div class="neo-outset rounded-[2rem] p-6 animate-fade delay-100 flex flex-col h-full">
                     <div class="neo-inset rounded-2xl p-4 mb-6 flex justify-center items-center h-64">
-                        <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?q=80&w=600&auto=format&fit=crop" alt="Keripik Truffle" class="rounded-xl w-full h-full object-cover shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1566478989037-e923e528d8b5?auto=format&fit=crop&w=600&q=80" alt="Keripik Truffle" class="rounded-xl w-full h-full object-cover shadow-sm">
                     </div>
                     <div class="flex-grow">
                         <div class="flex justify-between items-start mb-2">
                             <h3 class="text-xl font-bold text-gray-800">Keripik Tempe Truffle</h3>
                         </div>
-                        <p class="text-xs font-light text-gray-500 mb-6 leading-relaxed">Inovasi camilan lokal dengan taburan bumbu rahasia dan *truffle oil* premium. Renyah dan *addictive*.</p>
+                        <p class="text-xs font-light text-gray-500 mb-6 leading-relaxed">Inovasi camilan lokal dengan taburan bumbu rahasia dan *truffle oil* premium. Renyah dan adiktif.</p>
                     </div>
                     <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-300/30">
                         <span class="font-bold text-gray-800">Rp 45.000</span>
@@ -131,13 +126,13 @@
                 <div class="neo-outset rounded-[2rem] p-6 animate-fade delay-200 flex flex-col h-full">
                     <div class="neo-inset rounded-2xl p-4 mb-6 flex justify-center items-center h-64 relative">
                         <span class="absolute top-6 right-6 bg-[#ed8936] text-white text-[9px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">Signature</span>
-                        <img src="https://images.unsplash.com/photo-1558961363-a0c6e1c2c31e?q=80&w=600&auto=format&fit=crop" alt="Nastar Wisman" class="rounded-xl w-full h-full object-cover shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=600&q=80" alt="Nastar Artisan" class="rounded-xl w-full h-full object-cover shadow-sm">
                     </div>
                     <div class="flex-grow">
                         <div class="flex justify-between items-start mb-2">
                             <h3 class="text-xl font-bold text-gray-800">Nastar Artisan Butter</h3>
                         </div>
-                        <p class="text-xs font-light text-gray-500 mb-6 leading-relaxed">Selai nanas subang yang dimasak perlahan (slow-cooked) dibalut adonan *full butter* wjsman yang lumer di mulut.</p>
+                        <p class="text-xs font-light text-gray-500 mb-6 leading-relaxed">Selai nanas subang yang dimasak perlahan dibalut adonan *full butter* wisman yang lumer di mulut.</p>
                     </div>
                     <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-300/30">
                         <span class="font-bold text-gray-800">Rp 120.000</span>
@@ -147,13 +142,13 @@
 
                 <div class="neo-outset rounded-[2rem] p-6 animate-fade delay-300 flex flex-col h-full">
                     <div class="neo-inset rounded-2xl p-4 mb-6 flex justify-center items-center h-64">
-                        <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?q=80&w=600&auto=format&fit=crop" alt="Kopi Lokal" class="rounded-xl w-full h-full object-cover shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&w=600&q=80" alt="Kopi Lokal" class="rounded-xl w-full h-full object-cover shadow-sm">
                     </div>
                     <div class="flex-grow">
                         <div class="flex justify-between items-start mb-2">
                             <h3 class="text-xl font-bold text-gray-800">Kopi Arabika Roastery</h3>
                         </div>
-                        <p class="text-xs font-light text-gray-500 mb-6 leading-relaxed">Biji kopi arabika *single origin* dari pegunungan Jawa Barat, di-*roast* dalam *batch* kecil untuk menjaga kesegaran.</p>
+                        <p class="text-xs font-light text-gray-500 mb-6 leading-relaxed">Biji kopi arabika *single origin* dari pegunungan Jawa Barat, di-*roast* dalam *batch* kecil.</p>
                     </div>
                     <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-300/30">
                         <span class="font-bold text-gray-800">Rp 85.000</span>
@@ -164,7 +159,7 @@
             </div>
             
             <div class="text-center mt-16">
-                 <a href="https://wa.me/6289513363368?text=Minta%20katalog%20lengkap%20Buah%20Tangan" target="_blank" class="inline-block text-sm font-semibold text-gray-500 hover:text-[#ed8936] transition-colors border-b-2 border-transparent hover:border-[#ed8936] pb-1">Lihat Semua Etalase &rarr;</a>
+                 <a href="etalase.html" class="nav-link inline-block text-lg font-bold text-gray-500 hover:text-[#ed8936] transition-colors border-b-2 border-transparent hover:border-[#ed8936] pb-1">Lihat Semua Etalase &rarr;</a>
             </div>
         </div>
     </section>
@@ -216,7 +211,6 @@
         document.addEventListener("DOMContentLoaded", () => {
             const body = document.getElementById("page-body");
             
-            // Smooth Scroll untuk Navigasi Internal
             const internalLinks = document.querySelectorAll("a[href^='#']");
             internalLinks.forEach(link => {
                 link.addEventListener("click", function(e) {
@@ -225,15 +219,12 @@
                     if(!targetId) return;
                     const targetElement = document.getElementById(targetId);
                     if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 100, // Offset untuk floating nav
-                            behavior: "smooth"
-                        });
+                        window.scrollTo({ top: targetElement.offsetTop - 100, behavior: "smooth" });
                     }
                 });
             });
 
-            // Animasi Pindah Halaman Eksternal (Jika ditambahkan page baru)
+            // Animasi Pindah Halaman
             const extLinks = document.querySelectorAll(".nav-link");
             extLinks.forEach(link => {
                 link.addEventListener("click", function(e) {
@@ -246,13 +237,9 @@
             });
         });
 
-        // Anti-blank Bfcache
         window.addEventListener('pageshow', function (event) {
             const body = document.getElementById("page-body");
-            if (body) {
-                body.style.opacity = "1";
-                body.style.transform = "scale(1)";
-            }
+            if (body) { body.style.opacity = "1"; body.style.transform = "scale(1)"; }
         });
     </script>
 </body>
