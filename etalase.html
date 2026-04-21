@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etalase Lengkap | Buah Tangan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Palet Warna Neumorphism */
+        :root {
+            --bg-color: #e0e5ec;
+            --text-main: #4a5568;
+            --accent: #ed8936; 
+        }
+
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: var(--bg-color); 
+            color: var(--text-main); 
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+
+        /* Utility Classes Neumorphism */
+        .neo-outset {
+            background-color: var(--bg-color);
+            box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), 
+                       -9px -9px 16px rgba(255, 255, 255, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .neo-inset {
+            background-color: var(--bg-color);
+            box-shadow: inset 6px 6px 10px 0 rgba(163, 177, 198, 0.7), 
+                        inset -6px -6px 10px 0 rgba(255, 255, 255, 0.8);
+        }
+
+        .neo-button { transition: all 0.2s ease-in-out; }
+        .neo-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 12px 12px 20px rgba(163, 177, 198, 0.7), 
+                       -12px -12px 20px rgba(255, 255, 255, 0.6);
+        }
+        .neo-button:active {
+            transform: translateY(0);
+            box-shadow: inset 6px 6px 10px 0 rgba(163, 177, 198, 0.7), 
+                        inset -6px -6px 10px 0 rgba(255, 255, 255, 0.8);
+        }
+
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-fade { opacity: 0; animation: fadeInUp 0.8s ease-out forwards; }
+    </style>
+</head>
+<body id="page-body">
+    
+    <div class="fixed top-6 w-full z-50 px-6 flex justify-center">
+        <nav class="neo-outset px-8 py-4 rounded-full flex items-center justify-between w-full max-w-6xl">
+            <div class="flex items-center space-x-4">
+                <a href="index.html" class="nav-link neo-outset neo-button p-2 rounded-full text-[#4a5568] hover:text-[#ed8936]">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </a>
+                <span class="text-sm font-bold tracking-wider text-gray-500 uppercase hidden sm:block">Kembali ke Beranda</span>
+            </div>
+            <a href="index.html" class="text-xl font-bold tracking-wider text-[#ed8936] nav-link">Buah Tangan.</a>
+            <div>
+                <div class="w-10 sm:w-[150px]"></div>
+            </div>
+        </nav>
+    </div>
+
+    <header class="pt-40 pb-12 text-center px-6 animate-fade">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Etalase Lengkap</h1>
+        <p class="text-gray-500 font-light max-w-xl mx-auto">Dari manisnya cokelat hingga renyahnya keripik Nusantara. Temukan buah tangan yang sempurna di sini.</p>
+    </header>
+
+    <section class="pb-24 px-6 max-w-7xl mx-auto">
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
+            
+            <div class="neo-outset rounded-[2rem] p-6 animate-fade flex flex-col h-full">
+                <div class="neo-inset rounded-2xl p-4 mb-6 flex justify-center items-center h-56">
+                    <img src="https://images.unsplash.com/photo-1566478989037-e923e528d8b5?auto=format&fit=crop&w=600&q=80" alt="Keripik Truffle" class="rounded-xl w-full h-full object-cover shadow-sm">
+                </div>
+                <div class="flex-grow">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Keripik Tempe Truffle</h3>
+                    <p class="text-xs font-light text-gray-500 mb-6 line-clamp-2">Inovasi lokal dengan truffle oil premium.</p>
+                </div>
+                <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-300/30">
+                    <span class="font-bold text-gray-800">Rp 45.000</span>
+                    <a href="https://wa.me/6289513363368" target="_blank" class="neo-outset neo-button px-4 py-2 rounded-full text-[10px] font-bold text-[#ed8936] uppercase tracking-wider">Beli</a>
+                </div>
+            </div>
+
+            <div class="neo-outset rounded-[2rem] p-6 animate-fade flex flex-col h-full" style="animation-delay: 0.1s;">
+                <div class="neo-inset rounded-2xl p-4 mb-6 flex justify-center items-center h-56 relative">
+                    <span class="absolute top-6 right-6 bg-[#ed8936] text-white text-[9px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">Best</span>
+                    <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=600&q=80" alt="Nastar Artisan" class="rounded-xl w-full h-full object-cover shadow-sm">
+                </div>
+                <div class="flex-grow">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Nastar Artisan Butter</h3>
+                    <p class="text-xs font-light text-gray-500 mb-6 line-clamp-2">Adonan full butter wisman dengan isian nanas madu.</p>
+                </div>
+                <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-300/30">
+                    <span class="font-bold text-gray-800">Rp 120.000</span>
+                    <a href="https://wa.me/6289513363368" target="_blank" class="neo-outset neo-button px-4 py-2 rounded-full text-[10px] font-bold text-[#ed8936] uppercase tracking-wider">Beli</a>
+                </div>
+            </div>
+
+            <div class="neo-outset rounded-[2rem] p-6 animate-fade flex flex-col h-full" style="animation-delay: 0.2s;">
+                <div class="neo-inset rounded-2xl p-4 mb-6 flex justify-center items-center h-56">
+                    <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&w=600&q=80" alt="Kopi Lokal" class="rounded-xl w-full h-full object-cover shadow-sm">
+                </div>
+                <div class="flex-grow">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Kopi Arabika Roastery</h3>
+                    <p class="text-xs font-light text-gray-500 mb-6 line-clamp-2">Biji kopi arabika single origin pegunungan Jawa Barat.</p>
+                </div>
+                <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-300/30">
+                    <span class="font-bold text-gray-800">Rp 85.000</span>
+                    <a href="https://wa.me/6289513363368" target="_blank" class="neo-outset neo-button px-4 py-2 rounded-full text-[10px] font-bold text-[#ed8936] uppercase tracking-wider">Beli</a>
+                </div>
+            </div>
+
+            <div class="neo-outset rounded-[2rem] p-6 animate-fade flex flex-col h-full" style="animation-delay: 0.3s;">
+                <div class="neo-inset rounded-2xl p-4 mb-6 flex justify-center items-center h-56">
+                    <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?auto=format&fit=crop&w=600&q=80" alt="Keripik Pedas" class="rounded-xl w-full h-full object-cover shadow-sm">
+                </div>
+                <div class="flex-grow">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Keripik Singkong Balado</h3>
+                    <p class="text-xs font-light text-gray-500 mb-6 line-clamp-2">Irisan tipis singkong dengan bumbu balado pedas manis.</p>
+                </div>
+                <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-300/30">
+                    <span class="font-bold text-gray-800">Rp 35.000</span>
+                    <a href="https://wa.me/6289513363368" target="_blank" class="neo-outset neo-button px-4 py-2 rounded-full text-[10px] font-bold text-[#ed8936] uppercase tracking-wider">Beli</a>
+                </div>
+            </div>
+
+            <div class="neo-outset rounded-[2rem] p-6 animate-fade flex flex-col h-full" style="animation-delay: 0.4s;">
+                <div class="neo-inset rounded-2xl p-4 mb-6 flex justify-center items-center h-56">
+                    <img src="https://images.unsplash.com/photo-1548907040-4baa42d10919?auto=format&fit=crop&w=600&q=80" alt="Cokelat" class="rounded-xl w-full h-full object-cover shadow-sm">
+                </div>
+                <div class="flex-grow">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Cokelat Batang Artisan</h3>
+                    <p class="text-xs font-light text-gray-500 mb-6 line-clamp-2">Cokelat murni 70% dark chocolate asal Bali.</p>
+                </div>
+                <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-300/30">
+                    <span class="font-bold text-gray-800">Rp 65.000</span>
+                    <a href="https://wa.me/6289513363368" target="_blank" class="neo-outset neo-button px-4 py-2 rounded-full text-[10px] font-bold text-[#ed8936] uppercase tracking-wider">Beli</a>
+                </div>
+            </div>
+
+            <div class="neo-outset rounded-[2rem] p-6 animate-fade flex flex-col h-full" style="animation-delay: 0.5s;">
+                <div class="neo-inset rounded-2xl p-4 mb-6 flex justify-center items-center h-56">
+                    <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80" alt="Teh Rosella" class="rounded-xl w-full h-full object-cover shadow-sm">
+                </div>
+                <div class="flex-grow">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Teh Rosella Organik</h3>
+                    <p class="text-xs font-light text-gray-500 mb-6 line-clamp-2">Kuncup bunga rosella kering premium kaya akan vitamin C.</p>
+                </div>
+                <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-300/30">
+                    <span class="font-bold text-gray-800">Rp 50.000</span>
+                    <a href="https://wa.me/6289513363368" target="_blank" class="neo-outset neo-button px-4 py-2 rounded-full text-[10px] font-bold text-[#ed8936] uppercase tracking-wider">Beli</a>
+                </div>
+            </div>
+
+            <div class="neo-outset rounded-[2rem] p-6 animate-fade flex flex-col h-full" style="animation-delay: 0.6s;">
+                <div class="neo-inset rounded-2xl p-4 mb-6 flex justify-center items-center h-56">
+                    <img src="https://images.unsplash.com/photo-1589044003310-90956bba416c?auto=format&fit=crop&w=600&q=80" alt="Sambal Jar" class="rounded-xl w-full h-full object-cover shadow-sm">
+                </div>
+                <div class="flex-grow">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Sambal Roa Premium</h3>
+                    <p class="text-xs font-light text-gray-500 mb-6 line-clamp-2">Ikan roa asap asli Manado dengan tingkat kepedasan pas.</p>
+                </div>
+                <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-300/30">
+                    <span class="font-bold text-gray-800">Rp 55.000</span>
+                    <a href="https://wa.me/6289513363368" target="_blank" class="neo-outset neo-button px-4 py-2 rounded-full text-[10px] font-bold text-[#ed8936] uppercase tracking-wider">Beli</a>
+                </div>
+            </div>
+
+            <div class="neo-outset rounded-[2rem] p-6 animate-fade flex flex-col h-full" style="animation-delay: 0.7s;">
+                <div class="neo-inset rounded-2xl p-4 mb-6 flex justify-center items-center h-56">
+                    <img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?auto=format&fit=crop&w=600&q=80" alt="Kue Kering" class="rounded-xl w-full h-full object-cover shadow-sm">
+                </div>
+                <div class="flex-grow">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Kue Soes Kering Keju</h3>
+                    <p class="text-xs font-light text-gray-500 mb-6 line-clamp-2">Kue soes mini yang sangat renyah dengan rasa keju edam asli.</p>
+                </div>
+                <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-300/30">
+                    <span class="font-bold text-gray-800">Rp 60.000</span>
+                    <a href="https://wa.me/6289513363368" target="_blank" class="neo-outset neo-button px-4 py-2 rounded-full text-[10px] font-bold text-[#ed8936] uppercase tracking-wider">Beli</a>
+                </div>
+            </div>
+
+            <div class="neo-outset rounded-[2rem] p-6 animate-fade flex flex-col h-full" style="animation-delay: 0.8s;">
+                <div class="neo-inset rounded-2xl p-4 mb-6 flex justify-center items-center h-56">
+                    <img src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&w=600&q=80" alt="Kacang Mete" class="rounded-xl w-full h-full object-cover shadow-sm">
+                </div>
+                <div class="flex-grow">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Kacang Mete Panggang</h3>
+                    <p class="text-xs font-light text-gray-500 mb-6 line-clamp-2">Kacang mete oven (tanpa minyak) dengan taburan sea salt organik.</p>
+                </div>
+                <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-300/30">
+                    <span class="font-bold text-gray-800">Rp 95.000</span>
+                    <a href="https://wa.me/6289513363368" target="_blank" class="neo-outset neo-button px-4 py-2 rounded-full text-[10px] font-bold text-[#ed8936] uppercase tracking-wider">Beli</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const body = document.getElementById("page-body");
+            const extLinks = document.querySelectorAll(".nav-link");
+            
+            extLinks.forEach(link => {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault(); 
+                    const targetUrl = this.getAttribute("href");
+                    body.style.opacity = "0";
+                    body.style.transform = "scale(0.98)";
+                    setTimeout(() => { window.location.href = targetUrl; }, 400);
+                });
+            });
+        });
+
+        window.addEventListener('pageshow', function (event) {
+            const body = document.getElementById("page-body");
+            if (body) { body.style.opacity = "1"; body.style.transform = "scale(1)"; }
+        });
+    </script>
+</body>
+</html>
